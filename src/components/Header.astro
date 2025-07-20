@@ -1,0 +1,26 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<header class="w-full bg-white shadow-md">
+  <div class="max-w-screen-xl mx-auto px-20 grid grid-cols-4 items-center py-4">
+    <!-- Left: Logo -->
+    <div class="col-span-1 flex justify-start items-center">
+      <a href="/"><img src="/12tribes_logo.webp" alt="12 Tribes Logo" class="h-12 md:h-14 lg:h-20" /></a>
+    </div>
+
+    <!-- Center: Nav -->
+    <nav class="col-span-2 hidden md:flex justify-center space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-12 font-bold text-sm">
+      <a href="/" class={`text-green-900 hover:text-yellow-500 transition-colors duration-200 ${currentPath === '/' ? 'border-b-2 border-yellow-500' : ''}`}>Home</a>
+      <a href="/products" class={`text-green-900 hover:text-yellow-500 transition-colors duration-200 ${currentPath === '/products' ? 'border-b-2 border-yellow-500' : ''}`}>Products</a>
+      <a href="/about" class={`text-green-900 hover:text-yellow-500 transition-colors duration-200 ${currentPath === '/about' ? 'border-b-2 border-yellow-500' : ''}`}>About</a>
+      <a href="/contact" class={`text-green-900 hover:text-yellow-500 transition-colors duration-200 ${currentPath === '/contact' ? 'border-b-2 border-yellow-500' : ''}`}>Contact</a>
+    </nav>
+
+    <!-- Right: Icons -->
+    <div class="col-span-1 flex justify-end items-center space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-12 text-lg">
+      <button aria-label="Search"><i class="fas fa-search hover:text-yellow-500 text-green-900"></i></button>
+      <button aria-label="Cart"><i class="fas fa-shopping-cart hover:text-yellow-500 text-green-900"></i></button>
+    </div>
+  </div>
+</header>
