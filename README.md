@@ -4,6 +4,8 @@ Welcome to the official repository for 12 Tribes Beard Products — a modular, r
 
 This site is more than a storefront — it's a tribute to purpose, ingredients, and tradition. It showcases products crafted with biblically lawful ingredients that nourish, protect, and restore beards that build and lead.
 
+Current Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/b930fed8-6b85-4b4c-99f7-0fe319fb07eb/deploy-status)](https://app.netlify.com/projects/12tribesbeardproducts/deploys)
+
 ---
 
 ## 🛠️ Tech Stack
